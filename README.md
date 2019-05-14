@@ -1,18 +1,20 @@
-# Terminate
-Terminate is a diagnostics and recovery tool designed to help LANDesk administrators.
+## Terminate
+### Summary
+On occasion, Windows processes running on managed endpoints will fail to close in a timely manner resulting in resource contention and subsequent LANDesk job failures on those endpoints.  Terminate is a simple command line utility that can either force close a named client process, or report back to LANDesk inventory on hung process occurrence.  
 
-# Usage:
+### Usage:
   Terminate.exe TARGET=target-process-name TTL=max-process-age-in-minutes CONTRACT=TAG-or-KILL
   
   Process stop example:
   
        Terminate.exe TARGET=vulscan.exe TTL=15 CONTRACT=KILL
+       
   
   Process report example: 
   
        Terminate.exe TARGET=vulscan.exe TTL=15 CONTRACT=TAG
   
-# Notes:
+### Notes:
   Terminate command parameters are case insensitive.  Process name can be specified with or without the .exe extension.
   
   Terminate logs output to the console window (when run interactively) as well as to a log file at %TEMP% which will resolve to Windows\\Temp if run as a LANDesk task

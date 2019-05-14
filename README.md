@@ -16,6 +16,7 @@ Terminate is a diagnostics and recovery tool designed to help LANDesk administra
   Terminate logs output to the console window (when run interactively) as well as to a log file at %TEMP% which will resolve to Windows\\Temp if run as a LANDesk task
   
   Using the 'tag' parameter enables the LANDesk administrator to view process info centrally from the LANDesk console.  However, to use this feature, you must enable custom data.  When ‘tag’ is used, terminate.exe will use miniscan.exe to send custom data from the client to the LANDesk core at these two custom data paths:  
+  
   Custom Data - Support - ProcessName
-  and
+  
   Custom Data - Support - ProcessAgeMinutes

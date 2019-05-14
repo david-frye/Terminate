@@ -4,11 +4,13 @@ Terminate is a diagnostics and recovery tool designed to help LANDesk administra
 # Usage:
   Terminate.exe TARGET=target-process-name TTL=max-process-age-in-minutes CONTRACT=TAG-or-KILL
   
-  process stop example: 
-  Terminate.exe TARGET=vulscan.exe TTL=15 CONTRACT=KILL
+  Process stop example:
   
-  process report example: 
-  Terminate.exe TARGET=vulscan.exe TTL=15 CONTRACT=TAG
+       Terminate.exe TARGET=vulscan.exe TTL=15 CONTRACT=KILL
+  
+  Process report example: 
+  
+       Terminate.exe TARGET=vulscan.exe TTL=15 CONTRACT=TAG
   
 # Notes:
   Terminate command parameters are case insensitive.  Process name can be specified with or without the .exe extension.

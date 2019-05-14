@@ -2,14 +2,16 @@
 Terminate is a diagnostics and recovery tool designed to help LANDesk administrators.
 
 # Usage:
-  Terminate.exe TARGET=<target-process-name> TTL=<max-process-age-in-minutes> CONTRACT=<TAG-or-KILL>
+  Terminate.exe TARGET=target-process-name TTL=max-process-age-in-minutes CONTRACT=TAG-or-KILL
+  
   process stop example: 
   Terminate.exe TARGET=notepad.exe TTL=15 CONTRACT=KILL
+  
   process report example: 
   Terminate.exe TARGET=notepad.exe TTL=15 CONTRACT=TAG
   
 # Notes:
-  Terminate command parameters are case insensitive.  Process name can be specified with or without the .exe suffix
+  Terminate command parameters are case insensitive.  Process name can be specified with or without the .exe extension.
   
   Terminate logs output to the console window (when run interactively) as well as to a log file at %TEMP% which will resolve to Windows\\Temp if run as a LANDesk task
   

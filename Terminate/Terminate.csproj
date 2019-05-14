@@ -49,6 +49,11 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="LICENSE" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Terminate.exe" />
+    <None Include="NOTICE" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
